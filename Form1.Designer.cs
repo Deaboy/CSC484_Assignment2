@@ -1,6 +1,6 @@
 ﻿namespace CSC484_Assignment2
 {
-    partial class Form1
+    partial class mainmenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
+            this.phycisians = new System.Windows.Forms.Button();
+            this.patients = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // close
             // 
-            this.button1.Location = new System.Drawing.Point(197, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.close.Location = new System.Drawing.Point(175, 157);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 0;
+            this.close.Text = "Close";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // phycisians
+            // 
+            this.phycisians.Location = new System.Drawing.Point(43, 39);
+            this.phycisians.Name = "phycisians";
+            this.phycisians.Size = new System.Drawing.Size(173, 42);
+            this.phycisians.TabIndex = 1;
+            this.phycisians.Text = "Phycisians";
+            this.phycisians.UseVisualStyleBackColor = true;
+            this.phycisians.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // patients
+            // 
+            this.patients.Location = new System.Drawing.Point(43, 87);
+            this.patients.Name = "patients";
+            this.patients.Size = new System.Drawing.Size(173, 42);
+            this.patients.TabIndex = 2;
+            this.patients.Text = "Patients";
+            this.patients.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Choose an option to get started.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(262, 192);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.patients);
+            this.Controls.Add(this.phycisians);
+            this.Controls.Add(this.close);
+            this.Name = "mainmenu";
+            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button phycisians;
+        private System.Windows.Forms.Button patients;
+        private System.Windows.Forms.Label label1;
     }
 }
 
