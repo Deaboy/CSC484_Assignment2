@@ -30,23 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.PhysicianID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhysicianName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Specialality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
             this.Close = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
-            this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -56,9 +53,6 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PhysicianID,
-            this.PhysicianName,
-            this.Specialality,
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.specialityDataGridViewTextBoxColumn});
@@ -66,24 +60,24 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 141);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(304, 140);
+            this.dataGridView1.Size = new System.Drawing.Size(345, 140);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // PhysicianID
+            // physicianBindingSource
             // 
-            this.PhysicianID.HeaderText = "Physician ID";
-            this.PhysicianID.Name = "PhysicianID";
+            this.physicianBindingSource.DataMember = "Physician";
+            this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
             // 
-            // PhysicianName
+            // s1989750DataSetBindingSource
             // 
-            this.PhysicianName.HeaderText = "Physician Name";
-            this.PhysicianName.Name = "PhysicianName";
+            this.s1989750DataSetBindingSource.DataSource = this.s1989750DataSet;
+            this.s1989750DataSetBindingSource.Position = 0;
             // 
-            // Specialality
+            // s1989750DataSet
             // 
-            this.Specialality.HeaderText = "Specialality";
-            this.Specialality.Name = "Specialality";
+            this.s1989750DataSet.DataSetName = "s1989750DataSet";
+            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Close
             // 
@@ -101,7 +95,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(130, 12);
+            this.button2.Location = new System.Drawing.Point(177, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 23);
             this.button2.TabIndex = 2;
@@ -117,21 +111,6 @@
             this.label1.Size = new System.Drawing.Size(198, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Click on a Physician for more Information";
-            // 
-            // s1989750DataSet
-            // 
-            this.s1989750DataSet.DataSetName = "s1989750DataSet";
-            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // s1989750DataSetBindingSource
-            // 
-            this.s1989750DataSetBindingSource.DataSource = this.s1989750DataSet;
-            this.s1989750DataSetBindingSource.Position = 0;
-            // 
-            // physicianBindingSource
-            // 
-            this.physicianBindingSource.DataMember = "Physician";
-            this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
             // 
             // physicianTableAdapter
             // 
@@ -162,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 293);
+            this.ClientSize = new System.Drawing.Size(375, 293);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Close);
@@ -170,9 +149,9 @@
             this.Name = "Physicians";
             this.Load += new System.EventHandler(this.Physicians_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,9 +160,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhysicianID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhysicianName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Specialality;
         private System.Windows.Forms.Button Close;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
