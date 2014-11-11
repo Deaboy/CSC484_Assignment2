@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.close = new System.Windows.Forms.Button();
-            this.phycisians = new System.Windows.Forms.Button();
+            this.physicians = new System.Windows.Forms.Button();
             this.patients = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -44,15 +44,15 @@
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.button1_Click);
             // 
-            // phycisians
+            // physicians
             // 
-            this.phycisians.Location = new System.Drawing.Point(43, 39);
-            this.phycisians.Name = "phycisians";
-            this.phycisians.Size = new System.Drawing.Size(173, 42);
-            this.phycisians.TabIndex = 1;
-            this.phycisians.Text = "Phycisians";
-            this.phycisians.UseVisualStyleBackColor = true;
-            this.phycisians.Click += new System.EventHandler(this.button2_Click);
+            this.physicians.Location = new System.Drawing.Point(43, 39);
+            this.physicians.Name = "physicians";
+            this.physicians.Size = new System.Drawing.Size(173, 42);
+            this.physicians.TabIndex = 1;
+            this.physicians.Text = "Physicians";
+            this.physicians.UseVisualStyleBackColor = true;
+            this.physicians.Click += new System.EventHandler(this.button2_Click);
             // 
             // patients
             // 
@@ -62,6 +62,7 @@
             this.patients.TabIndex = 2;
             this.patients.Text = "Patients";
             this.patients.UseVisualStyleBackColor = true;
+            this.patients.Click += new System.EventHandler(this.patients_Click);
             // 
             // label1
             // 
@@ -80,7 +81,7 @@
             this.ClientSize = new System.Drawing.Size(262, 192);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.patients);
-            this.Controls.Add(this.phycisians);
+            this.Controls.Add(this.physicians);
             this.Controls.Add(this.close);
             this.Name = "mainmenu";
             this.Text = "Main Menu";
@@ -93,7 +94,7 @@
         #endregion
 
         private System.Windows.Forms.Button close;
-        private System.Windows.Forms.Button phycisians;
+        private System.Windows.Forms.Button physicians;
         private System.Windows.Forms.Button patients;
         private System.Windows.Forms.Label label1;
     }

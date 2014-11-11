@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.back = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.addnew = new System.Windows.Forms.Button();
             this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -76,14 +76,15 @@
             this.physicianBindingSource.DataMember = "Physician";
             this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
             // 
-            // back
+            // close
             // 
-            this.back.Location = new System.Drawing.Point(12, 330);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 1;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
+            this.close.Location = new System.Drawing.Point(12, 330);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 1;
+            this.close.Text = "Close";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.back_Click);
             // 
             // label1
             // 
@@ -172,7 +173,7 @@
             this.ClientSize = new System.Drawing.Size(532, 365);
             this.Controls.Add(this.addnew);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.back);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Patients";
             this.Text = "Patients";
@@ -194,7 +195,7 @@
         private s1989750DataSet s1989750DataSet;
         private System.Windows.Forms.BindingSource physicianBindingSource;
         private s1989750DataSetTableAdapters.PhysicianTableAdapter physicianTableAdapter;
-        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button close;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addnew;
         private System.Windows.Forms.BindingSource patientBindingSource;

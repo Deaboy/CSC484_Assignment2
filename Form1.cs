@@ -29,12 +29,26 @@ namespace CSC484_Assignment2
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void patients_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Patients patientsForm = new Patients();
+                patientsForm.ShowDialog(this);
+                patientsForm.Dispose();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error in Main Form - " + ex.Message);
+            }
         }
     }
 }

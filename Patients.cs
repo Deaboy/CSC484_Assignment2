@@ -48,5 +48,10 @@ namespace CSC484_Assignment2
             }
 
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
