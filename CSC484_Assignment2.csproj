@@ -50,6 +50,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs" />
+    <Compile Include="Physicians.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physicians.Designer.cs">
+      <DependentUpon>Physicians.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="s1989750DataSet.Designer.cs">
@@ -59,6 +69,10 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx" />
+    <EmbeddedResource Include="Physicians.resx">
+      <DependentUpon>Physicians.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
