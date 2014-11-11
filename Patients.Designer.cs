@@ -30,25 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.close = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.addnew = new System.Windows.Forms.Button();
-            this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
-            this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
-            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.patientTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PatientTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
+            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.close = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.addnew = new System.Windows.Forms.Button();
+            this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
+            this.patientTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PatientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,66 +67,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(507, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(560, 287);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // physicianBindingSource
-            // 
-            this.physicianBindingSource.DataMember = "Physician";
-            this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
-            // 
-            // close
-            // 
-            this.close.Location = new System.Drawing.Point(12, 330);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
-            this.close.TabIndex = 1;
-            this.close.Text = "Close";
-            this.close.UseVisualStyleBackColor = true;
-            this.close.Click += new System.EventHandler(this.back_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Select a patient from the list below to view and edit their details.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // addnew
-            // 
-            this.addnew.Location = new System.Drawing.Point(444, 330);
-            this.addnew.Name = "addnew";
-            this.addnew.Size = new System.Drawing.Size(75, 23);
-            this.addnew.TabIndex = 3;
-            this.addnew.Text = "Add New";
-            this.addnew.UseVisualStyleBackColor = true;
-            // 
-            // s1989750DataSetBindingSource
-            // 
-            this.s1989750DataSetBindingSource.DataSource = this.s1989750DataSet;
-            this.s1989750DataSetBindingSource.Position = 0;
-            // 
-            // s1989750DataSet
-            // 
-            this.s1989750DataSet.DataSetName = "s1989750DataSet";
-            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // physicianTableAdapter
-            // 
-            this.physicianTableAdapter.ClearBeforeFill = true;
-            // 
-            // patientBindingSource
-            // 
-            this.patientBindingSource.DataMember = "Patient";
-            this.patientBindingSource.DataSource = this.s1989750DataSetBindingSource;
-            // 
-            // patientTableAdapter
-            // 
-            this.patientTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -166,11 +109,68 @@
             this.contactNumberDataGridViewTextBoxColumn.Name = "contactNumberDataGridViewTextBoxColumn";
             this.contactNumberDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // patientBindingSource
+            // 
+            this.patientBindingSource.DataMember = "Patient";
+            this.patientBindingSource.DataSource = this.s1989750DataSetBindingSource;
+            // 
+            // s1989750DataSetBindingSource
+            // 
+            this.s1989750DataSetBindingSource.DataSource = this.s1989750DataSet;
+            this.s1989750DataSetBindingSource.Position = 0;
+            // 
+            // s1989750DataSet
+            // 
+            this.s1989750DataSet.DataSetName = "s1989750DataSet";
+            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // physicianBindingSource
+            // 
+            this.physicianBindingSource.DataMember = "Physician";
+            this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
+            // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(12, 326);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 1;
+            this.close.Text = "Close";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.back_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(305, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Select a patient from the list below to view and edit their details.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // addnew
+            // 
+            this.addnew.Location = new System.Drawing.Point(497, 326);
+            this.addnew.Name = "addnew";
+            this.addnew.Size = new System.Drawing.Size(75, 23);
+            this.addnew.TabIndex = 3;
+            this.addnew.Text = "Add New";
+            this.addnew.UseVisualStyleBackColor = true;
+            // 
+            // physicianTableAdapter
+            // 
+            this.physicianTableAdapter.ClearBeforeFill = true;
+            // 
+            // patientTableAdapter
+            // 
+            this.patientTableAdapter.ClearBeforeFill = true;
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 365);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.addnew);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.close);
@@ -179,10 +179,10 @@
             this.Text = "Patients";
             this.Load += new System.EventHandler(this.Patients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

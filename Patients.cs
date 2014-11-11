@@ -23,7 +23,7 @@ namespace CSC484_Assignment2
             this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
             // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
             this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
-
+            this.Owner.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +51,7 @@ namespace CSC484_Assignment2
 
         private void back_Click(object sender, EventArgs e)
         {
+            this.Owner.Visible = true;
             this.Close();
         }
     }

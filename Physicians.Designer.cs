@@ -57,10 +57,10 @@
             this.nameDataGridViewTextBoxColumn,
             this.specialityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.physicianBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 141);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(345, 140);
+            this.dataGridView1.Size = new System.Drawing.Size(560, 285);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -85,7 +85,7 @@
             this.Close.FlatAppearance.BorderSize = 4;
             this.Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Close.Location = new System.Drawing.Point(13, 13);
+            this.Close.Location = new System.Drawing.Point(12, 326);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(75, 23);
             this.Close.TabIndex = 1;
@@ -95,18 +95,18 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(177, 12);
+            this.button2.Location = new System.Drawing.Point(497, 326);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 23);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Add Physician";
+            this.button2.Text = "Add New";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 110);
+            this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 13);
             this.label1.TabIndex = 3;
@@ -120,28 +120,34 @@
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 50;
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 200;
             // 
             // specialityDataGridViewTextBoxColumn
             // 
             this.specialityDataGridViewTextBoxColumn.DataPropertyName = "Speciality";
             this.specialityDataGridViewTextBoxColumn.HeaderText = "Speciality";
+            this.specialityDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.specialityDataGridViewTextBoxColumn.Name = "specialityDataGridViewTextBoxColumn";
             this.specialityDataGridViewTextBoxColumn.ReadOnly = true;
+            this.specialityDataGridViewTextBoxColumn.Width = 200;
             // 
             // Physicians
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 293);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Close);
