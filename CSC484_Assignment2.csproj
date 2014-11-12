@@ -55,7 +55,13 @@
     </Compile>
     <Compile Include="Patients.Designer.cs">
       <DependentUpon>Patients.cs</DependentUpon>
-	</Compile>
+    </Compile>
+    <Compile Include="PhysicianDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicianDetails.Designer.cs">
+      <DependentUpon>PhysicianDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Physicians.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +80,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicianDetails.resx">
+      <DependentUpon>PhysicianDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Physicians.resx">
       <DependentUpon>Physicians.cs</DependentUpon>
     </EmbeddedResource>
