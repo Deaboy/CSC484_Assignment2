@@ -29,35 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Name = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Specialty = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.name_label = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.speciality_label = new System.Windows.Forms.Label();
+            this.speciality = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
-            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
-            this.fkadmittancephysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.admittanceTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.AdmittanceTableAdapter();
             this.patientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fkadmittancephysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
+            this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
+            this.admittanceTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.AdmittanceTableAdapter();
             this.PhysicianTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.fklabexamphysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.labExamTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.LabExamTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fklabexamphysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.fkmedicationphysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medicationTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.MedicationTableAdapter();
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.drugDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dosageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +62,7 @@
             this.endDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fkmedicationphysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,12 +72,14 @@
             this.endDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labExamTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.LabExamTableAdapter();
+            this.medicationTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.MedicationTableAdapter();
             this.Save = new System.Windows.Forms.Button();
             this.Cancle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fkadmittancephysicianidBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
             this.PhysicianTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -93,38 +93,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
-            // Name
+            // name_label
             // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(6, 3);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(35, 13);
-            this.Name.TabIndex = 0;
-            this.Name.Text = "Name";
+            this.name_label.AutoSize = true;
+            this.name_label.Location = new System.Drawing.Point(6, 3);
+            this.name_label.Name = "name_label";
+            this.name_label.Size = new System.Drawing.Size(35, 13);
+            this.name_label.TabIndex = 0;
+            this.name_label.Text = "Name";
             // 
-            // textBox1
+            // name
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 20);
-            this.textBox1.TabIndex = 1;
+            this.name.Location = new System.Drawing.Point(9, 19);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(300, 20);
+            this.name.TabIndex = 1;
             // 
-            // Specialty
+            // speciality_label
             // 
-            this.Specialty.AutoSize = true;
-            this.Specialty.Location = new System.Drawing.Point(6, 48);
-            this.Specialty.Name = "Specialty";
-            this.Specialty.Size = new System.Drawing.Size(50, 13);
-            this.Specialty.TabIndex = 2;
-            this.Specialty.Text = "Specialty";
+            this.speciality_label.AutoSize = true;
+            this.speciality_label.Location = new System.Drawing.Point(6, 48);
+            this.speciality_label.Name = "speciality_label";
+            this.speciality_label.Size = new System.Drawing.Size(50, 13);
+            this.speciality_label.TabIndex = 2;
+            this.speciality_label.Text = "Specialty";
             // 
-            // textBox2
+            // speciality
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.speciality.Location = new System.Drawing.Point(9, 64);
+            this.speciality.Name = "speciality";
+            this.speciality.Size = new System.Drawing.Size(300, 20);
+            this.speciality.TabIndex = 3;
+            this.speciality.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -152,29 +152,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(244, 150);
             this.dataGridView1.TabIndex = 5;
             // 
-            // s1989750DataSet
-            // 
-            this.s1989750DataSet.DataSetName = "s1989750DataSet";
-            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // physicianBindingSource
-            // 
-            this.physicianBindingSource.DataMember = "Physician";
-            this.physicianBindingSource.DataSource = this.s1989750DataSet;
-            // 
-            // physicianTableAdapter
-            // 
-            this.physicianTableAdapter.ClearBeforeFill = true;
-            // 
-            // fkadmittancephysicianidBindingSource
-            // 
-            this.fkadmittancephysicianidBindingSource.DataMember = "fk_admittance_physicianid";
-            this.fkadmittancephysicianidBindingSource.DataSource = this.physicianBindingSource;
-            // 
-            // admittanceTableAdapter
-            // 
-            this.admittanceTableAdapter.ClearBeforeFill = true;
-            // 
             // patientIDDataGridViewTextBoxColumn
             // 
             this.patientIDDataGridViewTextBoxColumn.DataPropertyName = "PatientID";
@@ -188,6 +165,29 @@
             this.physicianIDDataGridViewTextBoxColumn.HeaderText = "PhysicianID";
             this.physicianIDDataGridViewTextBoxColumn.Name = "physicianIDDataGridViewTextBoxColumn";
             this.physicianIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fkadmittancephysicianidBindingSource
+            // 
+            this.fkadmittancephysicianidBindingSource.DataMember = "fk_admittance_physicianid";
+            this.fkadmittancephysicianidBindingSource.DataSource = this.physicianBindingSource;
+            // 
+            // physicianBindingSource
+            // 
+            this.physicianBindingSource.DataMember = "Physician";
+            this.physicianBindingSource.DataSource = this.s1989750DataSet;
+            // 
+            // s1989750DataSet
+            // 
+            this.s1989750DataSet.DataSetName = "s1989750DataSet";
+            this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // physicianTableAdapter
+            // 
+            this.physicianTableAdapter.ClearBeforeFill = true;
+            // 
+            // admittanceTableAdapter
+            // 
+            this.admittanceTableAdapter.ClearBeforeFill = true;
             // 
             // PhysicianTabs
             // 
@@ -204,14 +204,14 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.Name);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.Specialty);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.name_label);
+            this.tabPage1.Controls.Add(this.name);
+            this.tabPage1.Controls.Add(this.speciality_label);
+            this.tabPage1.Controls.Add(this.speciality);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(474, 194);
+            this.tabPage1.Size = new System.Drawing.Size(536, 284);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -257,15 +257,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(544, 150);
             this.dataGridView2.TabIndex = 0;
             // 
-            // fklabexamphysicianidBindingSource
-            // 
-            this.fklabexamphysicianidBindingSource.DataMember = "fk_labexam_physicianid";
-            this.fklabexamphysicianidBindingSource.DataSource = this.physicianBindingSource;
-            // 
-            // labExamTableAdapter
-            // 
-            this.labExamTableAdapter.ClearBeforeFill = true;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -301,6 +292,11 @@
             this.physicianIDDataGridViewTextBoxColumn1.Name = "physicianIDDataGridViewTextBoxColumn1";
             this.physicianIDDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
+            // fklabexamphysicianidBindingSource
+            // 
+            this.fklabexamphysicianidBindingSource.DataMember = "fk_labexam_physicianid";
+            this.fklabexamphysicianidBindingSource.DataSource = this.physicianBindingSource;
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.dataGridView3);
@@ -329,15 +325,6 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(746, 150);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // fkmedicationphysicianidBindingSource
-            // 
-            this.fkmedicationphysicianidBindingSource.DataMember = "fk_medication_physicianid";
-            this.fkmedicationphysicianidBindingSource.DataSource = this.physicianBindingSource;
-            // 
-            // medicationTableAdapter
-            // 
-            this.medicationTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn1
             // 
@@ -381,6 +368,11 @@
             this.physicianIDDataGridViewTextBoxColumn2.DataPropertyName = "PhysicianID";
             this.physicianIDDataGridViewTextBoxColumn2.HeaderText = "PhysicianID";
             this.physicianIDDataGridViewTextBoxColumn2.Name = "physicianIDDataGridViewTextBoxColumn2";
+            // 
+            // fkmedicationphysicianidBindingSource
+            // 
+            this.fkmedicationphysicianidBindingSource.DataMember = "fk_medication_physicianid";
+            this.fkmedicationphysicianidBindingSource.DataSource = this.physicianBindingSource;
             // 
             // tabPage5
             // 
@@ -454,6 +446,14 @@
             this.physicianIDDataGridViewTextBoxColumn3.HeaderText = "PhysicianID";
             this.physicianIDDataGridViewTextBoxColumn3.Name = "physicianIDDataGridViewTextBoxColumn3";
             // 
+            // labExamTableAdapter
+            // 
+            this.labExamTableAdapter.ClearBeforeFill = true;
+            // 
+            // medicationTableAdapter
+            // 
+            this.medicationTableAdapter.ClearBeforeFill = true;
+            // 
             // Save
             // 
             this.Save.Location = new System.Drawing.Point(21, 353);
@@ -485,9 +485,9 @@
             this.Text = "PhysicianDetails";
             this.Load += new System.EventHandler(this.PhysicianDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fkadmittancephysicianidBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
             this.PhysicianTabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -507,10 +507,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Name;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Specialty;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label name_label;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.Label speciality_label;
+        private System.Windows.Forms.TextBox speciality;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private s1989750DataSet s1989750DataSet;
