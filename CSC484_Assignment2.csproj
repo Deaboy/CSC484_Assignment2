@@ -56,6 +56,12 @@
     <Compile Include="Patients.Designer.cs">
       <DependentUpon>Patients.cs</DependentUpon>
     </Compile>
+	<Compile Include="PatientDetails.cs">
+      <SubType>Form</SubType>
+	</Compile>
+	<Compile Include="PatientDetails.Designer.cs">
+	  <DependentUpon>PatientDetails.cs</DependentUpon>
+	</Compile>
     <Compile Include="PhysicianDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <EmbeddedResource Include="Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>
     </EmbeddedResource>
+	<EmbeddedResource Include="PatientDetails.resx">
+	  <DependentUpon>PatientDetails.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="PhysicianDetails.resx">
       <DependentUpon>PhysicianDetails.cs</DependentUpon>
     </EmbeddedResource>
