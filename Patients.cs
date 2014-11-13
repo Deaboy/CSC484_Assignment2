@@ -33,7 +33,20 @@ namespace CSC484_Assignment2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.physicianTableAdapter.FillBy(this.s1989750DataSet.Physician);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void back_Click(object sender, EventArgs e)
