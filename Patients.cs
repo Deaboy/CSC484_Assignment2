@@ -33,26 +33,23 @@ namespace CSC484_Assignment2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.physicianTableAdapter.FillBy(this.s1989750DataSet.Physician);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
+            int patientID = Int32.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            PatientDetails patientDetails = new PatientDetails(patientID);
+            patientDetails.ShowDialog(this);
+            patientDetails.Dispose();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
             this.Owner.Visible = true;
             this.Close();
+        }
+
+        private void addnew_Click(object sender, EventArgs e)
+        {
+            PatientDetails patientDetails = new PatientDetails();
+            patientDetails.ShowDialog(this);
+            patientDetails.Dispose();
         }
     }
 }
