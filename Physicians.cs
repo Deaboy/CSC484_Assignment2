@@ -31,12 +31,10 @@ namespace CSC484_Assignment2
         {
             // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
             this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
-            this.Owner.Visible = false;
         }
 
         private void Close_Click(object sender, EventArgs e)
         {
-            this.Owner.Visible = true;
             this.Close();
         }
     }

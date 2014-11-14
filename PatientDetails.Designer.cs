@@ -42,36 +42,21 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.admittanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.admittanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.drugDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dosageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.physicianIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.medicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.breakfastDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lunchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dinnerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialDietBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.physicianIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.treatmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.physicianIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.labExamBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -82,10 +67,44 @@
             this.labExamTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.LabExamTableAdapter();
             this.patientTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PatientTableAdapter();
             this.admittanceTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.AdmittanceTableAdapter();
+            this.drugDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dosageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.breakfastDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lunchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dinnerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.patientIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.patientIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.breakfastDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lunchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dinnerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.drugDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dosageDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicianIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.patientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.admittanceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.admittanceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicationBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -210,69 +229,34 @@
             this.comboBox1.TabIndex = 9;
             this.comboBox1.ValueMember = "ID";
             // 
-            // admittanceBindingSource
-            // 
-            this.admittanceBindingSource.DataMember = "Admittance";
-            this.admittanceBindingSource.DataSource = this.s1989750DataSet;
-            // 
             // physicianBindingSource
             // 
             this.physicianBindingSource.DataMember = "Physician";
             this.physicianBindingSource.DataSource = this.s1989750DataSet;
             // 
+            // admittanceBindingSource
+            // 
+            this.admittanceBindingSource.DataMember = "Admittance";
+            this.admittanceBindingSource.DataSource = this.s1989750DataSet;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.CausesValidation = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.drugDataGridViewTextBoxColumn,
-            this.dosageDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.endDateDataGridViewTextBoxColumn,
-            this.physicianIDDataGridViewTextBoxColumn});
+            this.drugDataGridViewTextBoxColumn1,
+            this.dosageDataGridViewTextBoxColumn1,
+            this.startDateDataGridViewTextBoxColumn1,
+            this.endDateDataGridViewTextBoxColumn1,
+            this.physicianIDDataGridViewTextBoxColumn3,
+            this.patientIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.medicationBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(574, 294);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // drugDataGridViewTextBoxColumn
-            // 
-            this.drugDataGridViewTextBoxColumn.DataPropertyName = "Drug";
-            this.drugDataGridViewTextBoxColumn.HeaderText = "Drug";
-            this.drugDataGridViewTextBoxColumn.Name = "drugDataGridViewTextBoxColumn";
-            this.drugDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // dosageDataGridViewTextBoxColumn
-            // 
-            this.dosageDataGridViewTextBoxColumn.DataPropertyName = "Dosage";
-            this.dosageDataGridViewTextBoxColumn.HeaderText = "Daily Dosage";
-            this.dosageDataGridViewTextBoxColumn.Name = "dosageDataGridViewTextBoxColumn";
-            // 
-            // startDateDataGridViewTextBoxColumn
-            // 
-            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
-            // 
-            // endDateDataGridViewTextBoxColumn
-            // 
-            this.endDateDataGridViewTextBoxColumn.DataPropertyName = "EndDate";
-            this.endDateDataGridViewTextBoxColumn.HeaderText = "EndDate";
-            this.endDateDataGridViewTextBoxColumn.Name = "endDateDataGridViewTextBoxColumn";
-            // 
-            // physicianIDDataGridViewTextBoxColumn
-            // 
-            this.physicianIDDataGridViewTextBoxColumn.DataPropertyName = "PhysicianID";
-            this.physicianIDDataGridViewTextBoxColumn.DataSource = this.physicianBindingSource;
-            this.physicianIDDataGridViewTextBoxColumn.DisplayMember = "Name";
-            this.physicianIDDataGridViewTextBoxColumn.HeaderText = "Physician";
-            this.physicianIDDataGridViewTextBoxColumn.Name = "physicianIDDataGridViewTextBoxColumn";
-            this.physicianIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.physicianIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.physicianIDDataGridViewTextBoxColumn.ValueMember = "ID";
-            this.physicianIDDataGridViewTextBoxColumn.Width = 200;
             // 
             // medicationBindingSource
             // 
@@ -343,36 +327,16 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.breakfastDataGridViewTextBoxColumn,
-            this.lunchDataGridViewTextBoxColumn,
-            this.dinnerDataGridViewTextBoxColumn});
+            this.breakfastDataGridViewTextBoxColumn1,
+            this.lunchDataGridViewTextBoxColumn1,
+            this.dinnerDataGridViewTextBoxColumn1,
+            this.patientIDDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.specialDietBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(574, 294);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // breakfastDataGridViewTextBoxColumn
-            // 
-            this.breakfastDataGridViewTextBoxColumn.DataPropertyName = "Breakfast";
-            this.breakfastDataGridViewTextBoxColumn.HeaderText = "Breakfast";
-            this.breakfastDataGridViewTextBoxColumn.Name = "breakfastDataGridViewTextBoxColumn";
-            this.breakfastDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // lunchDataGridViewTextBoxColumn
-            // 
-            this.lunchDataGridViewTextBoxColumn.DataPropertyName = "Lunch";
-            this.lunchDataGridViewTextBoxColumn.HeaderText = "Lunch";
-            this.lunchDataGridViewTextBoxColumn.Name = "lunchDataGridViewTextBoxColumn";
-            this.lunchDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // dinnerDataGridViewTextBoxColumn
-            // 
-            this.dinnerDataGridViewTextBoxColumn.DataPropertyName = "Dinner";
-            this.dinnerDataGridViewTextBoxColumn.HeaderText = "Dinner";
-            this.dinnerDataGridViewTextBoxColumn.Name = "dinnerDataGridViewTextBoxColumn";
-            this.dinnerDataGridViewTextBoxColumn.Width = 150;
             // 
             // specialDietBindingSource
             // 
@@ -396,47 +360,17 @@
             this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
-            this.startTimeDataGridViewTextBoxColumn,
-            this.endTimeDataGridViewTextBoxColumn,
-            this.physicianIDDataGridViewTextBoxColumn1});
+            this.nameDataGridViewTextBoxColumn1,
+            this.startTimeDataGridViewTextBoxColumn1,
+            this.endTimeDataGridViewTextBoxColumn1,
+            this.physicianIDDataGridViewTextBoxColumn4,
+            this.patientIDDataGridViewTextBoxColumn2});
             this.dataGridView3.DataSource = this.treatmentBindingSource;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(574, 294);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // startTimeDataGridViewTextBoxColumn
-            // 
-            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "StartTime";
-            this.startTimeDataGridViewTextBoxColumn.HeaderText = "StartTime";
-            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
-            // 
-            // endTimeDataGridViewTextBoxColumn
-            // 
-            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "EndTime";
-            this.endTimeDataGridViewTextBoxColumn.HeaderText = "EndTime";
-            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
-            // 
-            // physicianIDDataGridViewTextBoxColumn1
-            // 
-            this.physicianIDDataGridViewTextBoxColumn1.DataPropertyName = "PhysicianID";
-            this.physicianIDDataGridViewTextBoxColumn1.DataSource = this.physicianBindingSource;
-            this.physicianIDDataGridViewTextBoxColumn1.DisplayMember = "Name";
-            this.physicianIDDataGridViewTextBoxColumn1.HeaderText = "PhysicianID";
-            this.physicianIDDataGridViewTextBoxColumn1.Name = "physicianIDDataGridViewTextBoxColumn1";
-            this.physicianIDDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.physicianIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.physicianIDDataGridViewTextBoxColumn1.ValueMember = "ID";
-            this.physicianIDDataGridViewTextBoxColumn1.Width = 200;
             // 
             // treatmentBindingSource
             // 
@@ -460,39 +394,16 @@
             this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dateDataGridViewTextBoxColumn,
-            this.timeDataGridViewTextBoxColumn,
-            this.physicianIDDataGridViewTextBoxColumn2});
+            this.dateDataGridViewTextBoxColumn1,
+            this.timeDataGridViewTextBoxColumn1,
+            this.physicianIDDataGridViewTextBoxColumn5,
+            this.patientIDDataGridViewTextBoxColumn3});
             this.dataGridView4.DataSource = this.labExamBindingSource;
             this.dataGridView4.Location = new System.Drawing.Point(0, 0);
             this.dataGridView4.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(574, 294);
             this.dataGridView4.TabIndex = 0;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // physicianIDDataGridViewTextBoxColumn2
-            // 
-            this.physicianIDDataGridViewTextBoxColumn2.DataPropertyName = "PhysicianID";
-            this.physicianIDDataGridViewTextBoxColumn2.DataSource = this.physicianBindingSource;
-            this.physicianIDDataGridViewTextBoxColumn2.DisplayMember = "Name";
-            this.physicianIDDataGridViewTextBoxColumn2.HeaderText = "PhysicianID";
-            this.physicianIDDataGridViewTextBoxColumn2.Name = "physicianIDDataGridViewTextBoxColumn2";
-            this.physicianIDDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.physicianIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.physicianIDDataGridViewTextBoxColumn2.ValueMember = "ID";
-            this.physicianIDDataGridViewTextBoxColumn2.Width = 200;
             // 
             // labExamBindingSource
             // 
@@ -547,6 +458,261 @@
             // 
             this.admittanceTableAdapter.ClearBeforeFill = true;
             // 
+            // drugDataGridViewTextBoxColumn
+            // 
+            this.drugDataGridViewTextBoxColumn.DataPropertyName = "Drug";
+            this.drugDataGridViewTextBoxColumn.HeaderText = "Drug";
+            this.drugDataGridViewTextBoxColumn.Name = "drugDataGridViewTextBoxColumn";
+            this.drugDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dosageDataGridViewTextBoxColumn
+            // 
+            this.dosageDataGridViewTextBoxColumn.DataPropertyName = "Dosage";
+            this.dosageDataGridViewTextBoxColumn.HeaderText = "Daily Dosage";
+            this.dosageDataGridViewTextBoxColumn.Name = "dosageDataGridViewTextBoxColumn";
+            // 
+            // startDateDataGridViewTextBoxColumn
+            // 
+            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
+            // 
+            // endDateDataGridViewTextBoxColumn
+            // 
+            this.endDateDataGridViewTextBoxColumn.DataPropertyName = "EndDate";
+            this.endDateDataGridViewTextBoxColumn.HeaderText = "EndDate";
+            this.endDateDataGridViewTextBoxColumn.Name = "endDateDataGridViewTextBoxColumn";
+            // 
+            // physicianIDDataGridViewTextBoxColumn
+            // 
+            this.physicianIDDataGridViewTextBoxColumn.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn.HeaderText = "Physician";
+            this.physicianIDDataGridViewTextBoxColumn.Name = "physicianIDDataGridViewTextBoxColumn";
+            this.physicianIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn.ValueMember = "ID";
+            this.physicianIDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // breakfastDataGridViewTextBoxColumn
+            // 
+            this.breakfastDataGridViewTextBoxColumn.DataPropertyName = "Breakfast";
+            this.breakfastDataGridViewTextBoxColumn.HeaderText = "Breakfast";
+            this.breakfastDataGridViewTextBoxColumn.Name = "breakfastDataGridViewTextBoxColumn";
+            this.breakfastDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // lunchDataGridViewTextBoxColumn
+            // 
+            this.lunchDataGridViewTextBoxColumn.DataPropertyName = "Lunch";
+            this.lunchDataGridViewTextBoxColumn.HeaderText = "Lunch";
+            this.lunchDataGridViewTextBoxColumn.Name = "lunchDataGridViewTextBoxColumn";
+            this.lunchDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dinnerDataGridViewTextBoxColumn
+            // 
+            this.dinnerDataGridViewTextBoxColumn.DataPropertyName = "Dinner";
+            this.dinnerDataGridViewTextBoxColumn.HeaderText = "Dinner";
+            this.dinnerDataGridViewTextBoxColumn.Name = "dinnerDataGridViewTextBoxColumn";
+            this.dinnerDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // startTimeDataGridViewTextBoxColumn
+            // 
+            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn.HeaderText = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
+            // 
+            // endTimeDataGridViewTextBoxColumn
+            // 
+            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn.HeaderText = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
+            // 
+            // physicianIDDataGridViewTextBoxColumn1
+            // 
+            this.physicianIDDataGridViewTextBoxColumn1.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn1.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn1.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn1.HeaderText = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn1.Name = "physicianIDDataGridViewTextBoxColumn1";
+            this.physicianIDDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn1.ValueMember = "ID";
+            this.physicianIDDataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
+            // physicianIDDataGridViewTextBoxColumn2
+            // 
+            this.physicianIDDataGridViewTextBoxColumn2.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn2.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn2.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn2.HeaderText = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn2.Name = "physicianIDDataGridViewTextBoxColumn2";
+            this.physicianIDDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn2.ValueMember = "ID";
+            this.physicianIDDataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // dateDataGridViewTextBoxColumn1
+            // 
+            this.dateDataGridViewTextBoxColumn1.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn1.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn1.Name = "dateDataGridViewTextBoxColumn1";
+            // 
+            // timeDataGridViewTextBoxColumn1
+            // 
+            this.timeDataGridViewTextBoxColumn1.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn1.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn1.Name = "timeDataGridViewTextBoxColumn1";
+            // 
+            // physicianIDDataGridViewTextBoxColumn5
+            // 
+            this.physicianIDDataGridViewTextBoxColumn5.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn5.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn5.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn5.HeaderText = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn5.Name = "physicianIDDataGridViewTextBoxColumn5";
+            this.physicianIDDataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn5.ValueMember = "ID";
+            // 
+            // patientIDDataGridViewTextBoxColumn3
+            // 
+            this.patientIDDataGridViewTextBoxColumn3.DataPropertyName = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn3.HeaderText = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn3.Name = "patientIDDataGridViewTextBoxColumn3";
+            this.patientIDDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.patientIDDataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // startTimeDataGridViewTextBoxColumn1
+            // 
+            this.startTimeDataGridViewTextBoxColumn1.DataPropertyName = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn1.HeaderText = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn1.Name = "startTimeDataGridViewTextBoxColumn1";
+            // 
+            // endTimeDataGridViewTextBoxColumn1
+            // 
+            this.endTimeDataGridViewTextBoxColumn1.DataPropertyName = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn1.HeaderText = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn1.Name = "endTimeDataGridViewTextBoxColumn1";
+            // 
+            // physicianIDDataGridViewTextBoxColumn4
+            // 
+            this.physicianIDDataGridViewTextBoxColumn4.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn4.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn4.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn4.HeaderText = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn4.Name = "physicianIDDataGridViewTextBoxColumn4";
+            this.physicianIDDataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn4.ValueMember = "ID";
+            // 
+            // patientIDDataGridViewTextBoxColumn2
+            // 
+            this.patientIDDataGridViewTextBoxColumn2.DataPropertyName = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn2.HeaderText = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn2.Name = "patientIDDataGridViewTextBoxColumn2";
+            this.patientIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.patientIDDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // breakfastDataGridViewTextBoxColumn1
+            // 
+            this.breakfastDataGridViewTextBoxColumn1.DataPropertyName = "Breakfast";
+            this.breakfastDataGridViewTextBoxColumn1.HeaderText = "Breakfast";
+            this.breakfastDataGridViewTextBoxColumn1.Name = "breakfastDataGridViewTextBoxColumn1";
+            this.breakfastDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // lunchDataGridViewTextBoxColumn1
+            // 
+            this.lunchDataGridViewTextBoxColumn1.DataPropertyName = "Lunch";
+            this.lunchDataGridViewTextBoxColumn1.HeaderText = "Lunch";
+            this.lunchDataGridViewTextBoxColumn1.Name = "lunchDataGridViewTextBoxColumn1";
+            this.lunchDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dinnerDataGridViewTextBoxColumn1
+            // 
+            this.dinnerDataGridViewTextBoxColumn1.DataPropertyName = "Dinner";
+            this.dinnerDataGridViewTextBoxColumn1.HeaderText = "Dinner";
+            this.dinnerDataGridViewTextBoxColumn1.Name = "dinnerDataGridViewTextBoxColumn1";
+            this.dinnerDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // patientIDDataGridViewTextBoxColumn1
+            // 
+            this.patientIDDataGridViewTextBoxColumn1.DataPropertyName = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn1.HeaderText = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn1.Name = "patientIDDataGridViewTextBoxColumn1";
+            this.patientIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.patientIDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // drugDataGridViewTextBoxColumn1
+            // 
+            this.drugDataGridViewTextBoxColumn1.DataPropertyName = "Drug";
+            this.drugDataGridViewTextBoxColumn1.HeaderText = "Drug";
+            this.drugDataGridViewTextBoxColumn1.Name = "drugDataGridViewTextBoxColumn1";
+            this.drugDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dosageDataGridViewTextBoxColumn1
+            // 
+            this.dosageDataGridViewTextBoxColumn1.DataPropertyName = "Dosage";
+            this.dosageDataGridViewTextBoxColumn1.HeaderText = "Daily Dosage (mg)";
+            this.dosageDataGridViewTextBoxColumn1.Name = "dosageDataGridViewTextBoxColumn1";
+            // 
+            // startDateDataGridViewTextBoxColumn1
+            // 
+            this.startDateDataGridViewTextBoxColumn1.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.Name = "startDateDataGridViewTextBoxColumn1";
+            // 
+            // endDateDataGridViewTextBoxColumn1
+            // 
+            this.endDateDataGridViewTextBoxColumn1.DataPropertyName = "EndDate";
+            this.endDateDataGridViewTextBoxColumn1.HeaderText = "EndDate";
+            this.endDateDataGridViewTextBoxColumn1.Name = "endDateDataGridViewTextBoxColumn1";
+            // 
+            // physicianIDDataGridViewTextBoxColumn3
+            // 
+            this.physicianIDDataGridViewTextBoxColumn3.DataPropertyName = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn3.DataSource = this.physicianBindingSource;
+            this.physicianIDDataGridViewTextBoxColumn3.DisplayMember = "Name";
+            this.physicianIDDataGridViewTextBoxColumn3.HeaderText = "PhysicianID";
+            this.physicianIDDataGridViewTextBoxColumn3.Name = "physicianIDDataGridViewTextBoxColumn3";
+            this.physicianIDDataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.physicianIDDataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.physicianIDDataGridViewTextBoxColumn3.ValueMember = "ID";
+            // 
+            // patientIDDataGridViewTextBoxColumn
+            // 
+            this.patientIDDataGridViewTextBoxColumn.DataPropertyName = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn.HeaderText = "PatientID";
+            this.patientIDDataGridViewTextBoxColumn.Name = "patientIDDataGridViewTextBoxColumn";
+            this.patientIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.patientIDDataGridViewTextBoxColumn.Visible = false;
+            // 
             // PatientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,8 +727,8 @@
             this.Load += new System.EventHandler(this.PatientDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.admittanceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.admittanceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicationBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
@@ -615,6 +781,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.BindingSource physicianBindingSource;
         private s1989750DataSetTableAdapters.PhysicianTableAdapter physicianTableAdapter;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.BindingSource labExamBindingSource;
+        private s1989750DataSetTableAdapters.LabExamTableAdapter labExamTableAdapter;
+        private System.Windows.Forms.BindingSource patientBindingSource;
+        private s1989750DataSetTableAdapters.PatientTableAdapter patientTableAdapter;
+        private System.Windows.Forms.BindingSource admittanceBindingSource;
+        private s1989750DataSetTableAdapters.AdmittanceTableAdapter admittanceTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn drugDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dosageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
@@ -627,16 +801,27 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn physicianIDDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.BindingSource labExamBindingSource;
-        private s1989750DataSetTableAdapters.LabExamTableAdapter labExamTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn physicianIDDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.BindingSource patientBindingSource;
-        private s1989750DataSetTableAdapters.PatientTableAdapter patientTableAdapter;
-        private System.Windows.Forms.BindingSource admittanceBindingSource;
-        private s1989750DataSetTableAdapters.AdmittanceTableAdapter admittanceTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn drugDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dosageDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn physicianIDDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn breakfastDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lunchDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dinnerDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn physicianIDDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn physicianIDDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn3;
     }
 }

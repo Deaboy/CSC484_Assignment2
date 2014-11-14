@@ -45,15 +45,17 @@ namespace CSC484_Assignment2
             // TODO: This line of code loads data into the 's1989750DataSet.LabExam' table. You can move, or remove it, as needed.
             this.labExamTableAdapter.FillByPatient(this.s1989750DataSet.LabExam, patientID);
             // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
-            this.physicianTableAdapter.FillByPatient(this.s1989750DataSet.Physician, patientID);
+            this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
             // TODO: This line of code loads data into the 's1989750DataSet.Treatment' table. You can move, or remove it, as needed.
             this.treatmentTableAdapter.FillByPatient(this.s1989750DataSet.Treatment, patientID);
             // TODO: This line of code loads data into the 's1989750DataSet.SpecialDiet' table. You can move, or remove it, as needed.
             this.specialDietTableAdapter.FillByPatient(this.s1989750DataSet.SpecialDiet, patientID);
             // TODO: This line of code loads data into the 's1989750DataSet.Medication' table. You can move, or remove it, as needed.
             this.medicationTableAdapter.FillByPatient(this.s1989750DataSet.Medication, patientID);
-
-            Owner.Visible = false;
+            this.dataGridView1.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_DefaultValuesNeeded);
+            this.dataGridView2.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView2_DefaultValuesNeeded);
+            this.dataGridView3.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView3_DefaultValuesNeeded);
+            this.dataGridView4.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView4_DefaultValuesNeeded);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,9 +66,60 @@ namespace CSC484_Assignment2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // this.ValidateChildren();
-            Owner.Visible = true;
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.patientTableAdapter.Update(this.s1989750DataSet.Patient);
+                this.labExamTableAdapter.Update(this.s1989750DataSet.LabExam);
+                this.treatmentTableAdapter.Update(this.s1989750DataSet.Treatment);
+                this.specialDietTableAdapter.Update(this.s1989750DataSet.SpecialDiet);
+                this.medicationTableAdapter.Update(this.s1989750DataSet.Medication);
+                this.s1989750DataSet.Patient.AcceptChanges();
+                this.s1989750DataSet.LabExam.AcceptChanges();
+                this.s1989750DataSet.Treatment.AcceptChanges();
+                this.s1989750DataSet.SpecialDiet.AcceptChanges();
+                this.s1989750DataSet.Medication.AcceptChanges();
+                this.patientBindingSource.EndEdit();
+                this.labExamBindingSource.EndEdit();
+                this.treatmentBindingSource.EndEdit();
+                this.specialDietBindingSource.EndEdit();
+                this.medicationBindingSource.EndEdit();
+                this.Close();
+                MessageBox.Show("Update successful");
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("Update failed: " + ex.Message);
+            }
+        }
+        
+        private void dataGridView1_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells[5].Value = patientID;
+
+        }
+        private void dataGridView2_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells["PatientID"].Value = patientID;
+
+        }
+        private void dataGridView3_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells["PatientID"].Value = patientID;
+
+        }
+        private void dataGridView4_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells["PatientID"].Value = patientID;
+
         }
 
     }

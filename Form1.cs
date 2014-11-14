@@ -32,8 +32,10 @@ namespace CSC484_Assignment2
             try
             {
                 Physicians physiciansForm = new Physicians();
+                this.Visible = false;
                 physiciansForm.ShowDialog(this);
                 physiciansForm.Dispose();
+                this.Visible = true;
             }
             catch (Exception ex)
             {
@@ -51,8 +53,10 @@ namespace CSC484_Assignment2
             try
             {
                 Patients patientsForm = new Patients();
+                this.Visible = false;
                 patientsForm.ShowDialog(this);
                 patientsForm.Dispose();
+                this.Visible = true;
             }
             catch(Exception ex)
             {

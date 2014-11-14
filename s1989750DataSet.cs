@@ -6,6 +6,9 @@
 }
 
 namespace CSC484_Assignment2.s1989750DataSetTableAdapters {
+    partial class LabExamTableAdapter
+    {
+    }
     
     
     public partial class PhysicianTableAdapter {
