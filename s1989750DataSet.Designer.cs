@@ -1825,8 +1825,6 @@ namespace CSC484_Assignment2 {
                 xs.Add(dsSchema);
                 return type;
             }
-
-            public PatientDataTable Name { get; set; }
         }
         
         /// <summary>
