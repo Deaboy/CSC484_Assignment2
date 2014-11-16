@@ -86,6 +86,9 @@ namespace CSC484_Assignment2
                 patientRow["ContactNumber"] = this.contact_phone.Text;
                 patientRow.EndEdit();
                 patientTableAdapter.Update(s1989750DataSet.Patient);
+
+                this.Validate();
+                medicationTableAdapter.Update(s1989750DataSet.Medication);
                 
                 MessageBox.Show("Update successful");
                 this.Close();

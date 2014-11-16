@@ -4894,8 +4894,8 @@ SELECT ID, Date, Time, PatientID, PhysicianID FROM LabExam WHERE (ID = @ID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Dosage, Drug, EndDate, PhysicianID, PatientID, StartDate FROM Medication W" +
-                "HERE (PatientID = @PatientID)";
+            this._commandCollection[1].CommandText = "SELECT ID, Dosage, Drug, EndDate, PhysicianID, PatientID, StartDate FROM Medicati" +
+                "on WHERE (PatientID = @PatientID)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "PatientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
