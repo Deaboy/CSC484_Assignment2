@@ -36,6 +36,7 @@ namespace CSC484_Assignment2
             PatientDetails patientDetails = new PatientDetails(patientID);
             patientDetails.ShowDialog(this);
             patientDetails.Dispose();
+            this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace CSC484_Assignment2
             PatientDetails patientDetails = new PatientDetails();
             patientDetails.ShowDialog(this);
             patientDetails.Dispose();
+            this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
         }
     }
 }
