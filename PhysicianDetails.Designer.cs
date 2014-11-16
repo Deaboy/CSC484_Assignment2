@@ -37,11 +37,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.patientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fkadmittancephysicianidBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
             this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
-            this.admittanceTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.AdmittanceTableAdapter();
             this.PhysicianTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -77,7 +75,6 @@
             this.Save = new System.Windows.Forms.Button();
             this.Cancle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fkadmittancephysicianidBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).BeginInit();
             this.PhysicianTabs.SuspendLayout();
@@ -145,7 +142,6 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.patientIDDataGridViewTextBoxColumn,
             this.physicianIDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fkadmittancephysicianidBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(6, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -166,11 +162,6 @@
             this.physicianIDDataGridViewTextBoxColumn.Name = "physicianIDDataGridViewTextBoxColumn";
             this.physicianIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // fkadmittancephysicianidBindingSource
-            // 
-            this.fkadmittancephysicianidBindingSource.DataMember = "fk_admittance_physicianid";
-            this.fkadmittancephysicianidBindingSource.DataSource = this.physicianBindingSource;
-            // 
             // physicianBindingSource
             // 
             this.physicianBindingSource.DataMember = "Physician";
@@ -184,10 +175,6 @@
             // physicianTableAdapter
             // 
             this.physicianTableAdapter.ClearBeforeFill = true;
-            // 
-            // admittanceTableAdapter
-            // 
-            this.admittanceTableAdapter.ClearBeforeFill = true;
             // 
             // PhysicianTabs
             // 
@@ -485,7 +472,6 @@
             this.Text = "PhysicianDetails";
             this.Load += new System.EventHandler(this.PhysicianDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fkadmittancephysicianidBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s1989750DataSet)).EndInit();
             this.PhysicianTabs.ResumeLayout(false);
@@ -516,8 +502,6 @@
         private s1989750DataSet s1989750DataSet;
         private System.Windows.Forms.BindingSource physicianBindingSource;
         private s1989750DataSetTableAdapters.PhysicianTableAdapter physicianTableAdapter;
-        private System.Windows.Forms.BindingSource fkadmittancephysicianidBindingSource;
-        private s1989750DataSetTableAdapters.AdmittanceTableAdapter admittanceTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn physicianIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabControl PhysicianTabs;

@@ -47,8 +47,6 @@ namespace CSC484_Assignment2
 
             // TODO: This line of code loads data into the 's1989750DataSet.Patient' table. You can move, or remove it, as needed.
             this.patientTableAdapter.FillByPatient(this.s1989750DataSet.Patient, patientID);
-            // TODO: This line of code loads data into the 's1989750DataSet.Admittance' table. You can move, or remove it, as needed.
-            this.admittanceTableAdapter.Fill(this.s1989750DataSet.Admittance);
             // TODO: This line of code loads data into the 's1989750DataSet.LabExam' table. You can move, or remove it, as needed.
             this.labExamTableAdapter.FillByPatient(this.s1989750DataSet.LabExam, patientID);
             // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
@@ -64,10 +62,9 @@ namespace CSC484_Assignment2
             this.dataGridView3.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView3_DefaultValuesNeeded);
             this.dataGridView4.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView4_DefaultValuesNeeded);
 
-            if (newRow == false)
-            {
-                patientRow = s1989750DataSet.Tables["Patient"].Rows[0];
-            }
+            patientRow = s1989750DataSet.Tables["Patient"].Rows[0];
+            this.admitting_physician.SelectedValue = patientRow["PhysicianID"];
+            label1.Text = "Patient " + patientID;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -84,6 +81,7 @@ namespace CSC484_Assignment2
                 patientRow["PhoneNumber"] = this.phone_number.Text;
                 patientRow["ContactName"] = this.contact_name.Text;
                 patientRow["ContactNumber"] = this.contact_phone.Text;
+                patientRow["PhysicianID"] = this.admitting_physician.SelectedValue;
                 patientRow.EndEdit();
                 patientTableAdapter.Update(s1989750DataSet.Patient);
 

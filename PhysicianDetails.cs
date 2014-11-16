@@ -23,8 +23,6 @@ namespace CSC484_Assignment2
             this.medicationTableAdapter.Fill(this.s1989750DataSet.Medication);
             // TODO: This line of code loads data into the 's1989750DataSet.LabExam' table. You can move, or remove it, as needed.
             this.labExamTableAdapter.Fill(this.s1989750DataSet.LabExam);
-            // TODO: This line of code loads data into the 's1989750DataSet.Admittance' table. You can move, or remove it, as needed.
-            this.admittanceTableAdapter.Fill(this.s1989750DataSet.Admittance);
             // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
             this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
 
