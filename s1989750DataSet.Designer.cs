@@ -4485,8 +4485,8 @@ SELECT ID, Date, Time, PatientID, PhysicianID FROM LabExam WHERE (ID = @ID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Date, Time, PhysicianID, PatientID FROM dbo.LabExam\r\nWHERE PatientID=@Pati" +
-                "entID";
+            this._commandCollection[1].CommandText = "SELECT ID, Date, Time, PhysicianID, PatientID FROM dbo.LabExam\r\nWHERE PatientID=@" +
+                "PatientID";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "PatientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -6187,8 +6187,8 @@ SELECT ID, Breakfast, Lunch, Dinner, PatientID FROM SpecialDiet WHERE (ID = @ID)
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Breakfast, Lunch, Dinner, PatientID FROM dbo.SpecialDiet\r\nWHERE PatientID=" +
-                "@PatientID";
+            this._commandCollection[1].CommandText = "SELECT ID, Breakfast, Lunch, Dinner, PatientID FROM dbo.SpecialDiet\r\nWHERE Patien" +
+                "tID=@PatientID";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "PatientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -6613,8 +6613,8 @@ SELECT ID, Name, StartTime, EndTime, PatientID, PhysicianID FROM Treatment WHERE
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Name, StartTime, EndTime, PhysicianID, PatientID FROM dbo.Treatment\r\nWHERE" +
-                " PatientID=@PatientID";
+            this._commandCollection[1].CommandText = "SELECT ID, Name, StartTime, EndTime, PhysicianID, PatientID FROM dbo.Treatment\r\nW" +
+                "HERE PatientID=@PatientID";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "PatientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

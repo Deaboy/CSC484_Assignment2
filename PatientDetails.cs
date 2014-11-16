@@ -89,6 +89,9 @@ namespace CSC484_Assignment2
 
                 this.Validate();
                 medicationTableAdapter.Update(s1989750DataSet.Medication);
+                treatmentTableAdapter.Update(s1989750DataSet.Treatment);
+                specialDietTableAdapter.Update(s1989750DataSet.SpecialDiet);
+                labExamTableAdapter.Update(s1989750DataSet.LabExam);
                 
                 MessageBox.Show("Update successful");
                 this.Close();
@@ -110,21 +113,21 @@ namespace CSC484_Assignment2
             System.Windows.Forms.DataGridViewRowEventArgs e)
         {
 
-            e.Row.Cells["PatientID"].Value = patientID;
+            e.Row.Cells[3].Value = patientID;
 
         }
         private void dataGridView3_DefaultValuesNeeded(object sender,
             System.Windows.Forms.DataGridViewRowEventArgs e)
         {
 
-            e.Row.Cells["PatientID"].Value = patientID;
+            e.Row.Cells[4].Value = patientID;
 
         }
         private void dataGridView4_DefaultValuesNeeded(object sender,
             System.Windows.Forms.DataGridViewRowEventArgs e)
         {
 
-            e.Row.Cells["PatientID"].Value = patientID;
+            e.Row.Cells[3].Value = patientID;
 
         }
 
