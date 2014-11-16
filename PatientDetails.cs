@@ -131,5 +131,27 @@ namespace CSC484_Assignment2
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this patient?\n"
+                + "All associated medications, treatments, lab exams, and special diets will be deleted.",
+                "Confirm",
+                MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    patientRow.Delete();
+                    patientTableAdapter.Update(s1989750DataSet.Patient);
+
+                    MessageBox.Show("Update successful");
+                    this.Close();
+                }
+                catch (System.Exception ex)
+                {
+                    MessageBox.Show("Update failed: " + ex.Message);
+                }
+            }
+        }
+
     }
 }
