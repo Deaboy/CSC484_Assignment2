@@ -39,7 +39,7 @@
             this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
             this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.close = new System.Windows.Forms.Button();
+            this.cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.addnew = new System.Windows.Forms.Button();
             this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
@@ -65,12 +65,12 @@
             this.contactNameDataGridViewTextBoxColumn,
             this.contactNumberDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.patientBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 35);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(560, 285);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -132,33 +132,33 @@
             this.physicianBindingSource.DataMember = "Physician";
             this.physicianBindingSource.DataSource = this.s1989750DataSetBindingSource;
             // 
-            // close
+            // cancel
             // 
-            this.close.Location = new System.Drawing.Point(12, 326);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
-            this.close.TabIndex = 1;
-            this.close.Text = "Close";
-            this.close.UseVisualStyleBackColor = true;
-            this.close.Click += new System.EventHandler(this.back_Click);
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancel.Location = new System.Drawing.Point(12, 326);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(75, 23);
+            this.cancel.TabIndex = 1;
+            this.cancel.Text = "Close";
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(305, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select a patient from the list below to view and edit their details.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // addnew
             // 
-            this.addnew.Location = new System.Drawing.Point(497, 326);
+            this.addnew.Location = new System.Drawing.Point(472, 326);
             this.addnew.Name = "addnew";
-            this.addnew.Size = new System.Drawing.Size(75, 23);
+            this.addnew.Size = new System.Drawing.Size(100, 23);
             this.addnew.TabIndex = 3;
-            this.addnew.Text = "Add New";
+            this.addnew.Text = "Add Patient";
             this.addnew.UseVisualStyleBackColor = true;
             this.addnew.Click += new System.EventHandler(this.addnew_Click);
             // 
@@ -174,10 +174,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.addnew);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.close);
+            this.Controls.Add(this.cancel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Patients";
             this.Text = "Patients";
@@ -199,7 +200,7 @@
         private s1989750DataSet s1989750DataSet;
         private System.Windows.Forms.BindingSource physicianBindingSource;
         private s1989750DataSetTableAdapters.PhysicianTableAdapter physicianTableAdapter;
-        private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button cancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addnew;
         private System.Windows.Forms.BindingSource patientBindingSource;

@@ -32,12 +32,12 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Specialty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.physicianBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s1989750DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s1989750DataSet = new CSC484_Assignment2.s1989750DataSet();
-            this.close = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cancel = new System.Windows.Forms.Button();
+            this.addnew = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.physicianTableAdapter = new CSC484_Assignment2.s1989750DataSetTableAdapters.PhysicianTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,7 +55,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.specialityDataGridViewTextBoxColumn});
+            this.Specialty});
             this.dataGridView1.DataSource = this.physicianBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 35);
             this.dataGridView1.Name = "dataGridView1";
@@ -82,14 +82,13 @@
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             this.nameDataGridViewTextBoxColumn.Width = 200;
             // 
-            // specialityDataGridViewTextBoxColumn
+            // Specialty
             // 
-            this.specialityDataGridViewTextBoxColumn.DataPropertyName = "Speciality";
-            this.specialityDataGridViewTextBoxColumn.HeaderText = "Speciality";
-            this.specialityDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.specialityDataGridViewTextBoxColumn.Name = "specialityDataGridViewTextBoxColumn";
-            this.specialityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.specialityDataGridViewTextBoxColumn.Width = 200;
+            this.Specialty.DataPropertyName = "Specialty";
+            this.Specialty.HeaderText = "Specialty";
+            this.Specialty.Name = "Specialty";
+            this.Specialty.ReadOnly = true;
+            this.Specialty.Width = 200;
             // 
             // physicianBindingSource
             // 
@@ -106,29 +105,30 @@
             this.s1989750DataSet.DataSetName = "s1989750DataSet";
             this.s1989750DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // close
+            // cancel
             // 
-            this.close.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.close.FlatAppearance.BorderSize = 4;
-            this.close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.close.Location = new System.Drawing.Point(12, 326);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
-            this.close.TabIndex = 1;
-            this.close.Text = "Close";
-            this.close.UseVisualStyleBackColor = true;
-            this.close.Click += new System.EventHandler(this.Close_Click);
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cancel.FlatAppearance.BorderSize = 4;
+            this.cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.cancel.Location = new System.Drawing.Point(12, 326);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(75, 23);
+            this.cancel.TabIndex = 1;
+            this.cancel.Text = "Close";
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
-            // button2
+            // addnew
             // 
-            this.button2.Location = new System.Drawing.Point(497, 326);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add New";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.addnew.Location = new System.Drawing.Point(472, 326);
+            this.addnew.Name = "addnew";
+            this.addnew.Size = new System.Drawing.Size(100, 23);
+            this.addnew.TabIndex = 2;
+            this.addnew.Text = "Add Physician";
+            this.addnew.UseVisualStyleBackColor = true;
+            this.addnew.Click += new System.EventHandler(this.addnew_Click);
             // 
             // label1
             // 
@@ -147,12 +147,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.close);
+            this.Controls.Add(this.addnew);
+            this.Controls.Add(this.cancel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Physicians";
+            this.Text = "Physicians";
             this.Load += new System.EventHandler(this.Physicians_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.physicianBindingSource)).EndInit();
@@ -166,15 +168,16 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button close;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Button addnew;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource s1989750DataSetBindingSource;
         private s1989750DataSet s1989750DataSet;
         private System.Windows.Forms.BindingSource physicianBindingSource;
         private s1989750DataSetTableAdapters.PhysicianTableAdapter physicianTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn specialityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specialityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Specialty;
     }
 }

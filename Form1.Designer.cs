@@ -36,6 +36,7 @@
             // 
             // close
             // 
+            this.close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.close.Location = new System.Drawing.Point(175, 157);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(75, 23);
@@ -78,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.close;
             this.ClientSize = new System.Drawing.Size(262, 192);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.patients);

@@ -80,7 +80,7 @@
       <DependentUpon>s1989750DataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="s1989750DataSet.Designer.cs">
+    <Compile Include="s1989750DataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>s1989750DataSet.xsd</DependentUpon>
@@ -123,8 +123,8 @@
     </None>
     <None Include="s1989750DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>s1989750DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>s1989750DataSet3.Designer.cs</LastGenOutput>
     </None>
     <None Include="s1989750DataSet.xss">
       <DependentUpon>s1989750DataSet.xsd</DependentUpon>

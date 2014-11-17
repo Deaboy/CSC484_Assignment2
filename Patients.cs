@@ -21,27 +21,15 @@ namespace CSC484_Assignment2
         {
             // TODO: This line of code loads data into the 's1989750DataSet.Patient' table. You can move, or remove it, as needed.
             this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
-            // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
-            this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int patientID = Int32.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            long patientID = Int64.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             PatientDetails patientDetails = new PatientDetails(patientID);
             patientDetails.ShowDialog(this);
             patientDetails.Dispose();
             this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
-        }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void addnew_Click(object sender, EventArgs e)
@@ -50,6 +38,11 @@ namespace CSC484_Assignment2
             patientDetails.ShowDialog(this);
             patientDetails.Dispose();
             this.patientTableAdapter.Fill(this.s1989750DataSet.Patient);
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

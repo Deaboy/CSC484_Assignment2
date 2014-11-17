@@ -12,7 +12,6 @@ namespace CSC484_Assignment2
 {
     public partial class PatientDetails : Form
     {
-        private bool newRow;
         private long patientID;
         private DataRow patientRow;
 
@@ -26,54 +25,59 @@ namespace CSC484_Assignment2
         {
             if (patientID == 0)
             {
-                // Create new patient
-                newRow = true;
-
+                // Create a new client with blank data
                 patientRow = s1989750DataSet.Patient.NewPatientRow();
                 patientRow["Name"] = "";
                 patientRow["PhoneNumber"] = "";
                 patientRow["ContactName"] = "";
                 patientRow["ContactNumber"] = "";
 
+                // Put new patient into database
                 s1989750DataSet.Patient.Rows.Add(patientRow);
                 patientTableAdapter.Update(s1989750DataSet.Patient);
 
+                // Store the ID
                 patientID = (long) patientRow["ID"];
             }
-            else
-            {
-                newRow = false;
-            }
 
-            // TODO: This line of code loads data into the 's1989750DataSet.Patient' table. You can move, or remove it, as needed.
+            // Load up data from database
             this.patientTableAdapter.FillByPatient(this.s1989750DataSet.Patient, patientID);
-            // TODO: This line of code loads data into the 's1989750DataSet.LabExam' table. You can move, or remove it, as needed.
-            this.labExamTableAdapter.FillByPatient(this.s1989750DataSet.LabExam, patientID);
-            // TODO: This line of code loads data into the 's1989750DataSet.Physician' table. You can move, or remove it, as needed.
             this.physicianTableAdapter.Fill(this.s1989750DataSet.Physician);
-            // TODO: This line of code loads data into the 's1989750DataSet.Treatment' table. You can move, or remove it, as needed.
             this.treatmentTableAdapter.FillByPatient(this.s1989750DataSet.Treatment, patientID);
-            // TODO: This line of code loads data into the 's1989750DataSet.SpecialDiet' table. You can move, or remove it, as needed.
-            this.specialDietTableAdapter.FillByPatient(this.s1989750DataSet.SpecialDiet, patientID);
-            // TODO: This line of code loads data into the 's1989750DataSet.Medication' table. You can move, or remove it, as needed.
+            this.labExamTableAdapter.FillByPatient(this.s1989750DataSet.LabExam, patientID);
             this.medicationTableAdapter.FillByPatient(this.s1989750DataSet.Medication, patientID);
+            this.specialDietTableAdapter.FillByPatient(this.s1989750DataSet.SpecialDiet, patientID);
+            
+            // Add listeners for default values for DataGridViews
             this.dataGridView1.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_DefaultValuesNeeded);
             this.dataGridView2.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView2_DefaultValuesNeeded);
             this.dataGridView3.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView3_DefaultValuesNeeded);
             this.dataGridView4.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView4_DefaultValuesNeeded);
 
+            // Fetch the row we're currently editing
             patientRow = s1989750DataSet.Tables["Patient"].Rows[0];
             this.admitting_physician.SelectedValue = patientRow["PhysicianID"];
             label1.Text = "Patient " + patientID;
+
+            // Explicitly hide the ID column
+            this.dataGridView1.Columns[0].Visible = false;
+            this.dataGridView2.Columns[0].Visible = false;
+            this.dataGridView3.Columns[0].Visible = false;
+            this.dataGridView4.Columns[0].Visible = false;
+
+            // If no admitting physician is set, forcibly choose first one
+            if (this.admitting_physician.SelectedValue == null)
+            {
+                this.admitting_physician.SelectedIndex = 0;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
-            Owner.Visible = true;
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Save_Click(object sender, EventArgs e)
         {
             try
             {
@@ -99,37 +103,8 @@ namespace CSC484_Assignment2
                 MessageBox.Show("Update failed: " + ex.Message);
             }
         }
-        
-        private void dataGridView1_DefaultValuesNeeded(object sender,
-            System.Windows.Forms.DataGridViewRowEventArgs e)
-        {
 
-            e.Row.Cells[5].Value = patientID;
-
-        }
-        private void dataGridView2_DefaultValuesNeeded(object sender,
-            System.Windows.Forms.DataGridViewRowEventArgs e)
-        {
-
-            e.Row.Cells[3].Value = patientID;
-
-        }
-        private void dataGridView3_DefaultValuesNeeded(object sender,
-            System.Windows.Forms.DataGridViewRowEventArgs e)
-        {
-
-            e.Row.Cells[4].Value = patientID;
-
-        }
-        private void dataGridView4_DefaultValuesNeeded(object sender,
-            System.Windows.Forms.DataGridViewRowEventArgs e)
-        {
-
-            e.Row.Cells[3].Value = patientID;
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void Delete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to delete this patient?\n"
                 + "All associated medications, treatments, lab exams, and special diets will be deleted.",
@@ -151,5 +126,33 @@ namespace CSC484_Assignment2
             }
         }
 
+        private void dataGridView1_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells[1].Value = patientID;
+
+        }
+        private void dataGridView2_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells[1].Value = patientID;
+
+        }
+        private void dataGridView3_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells[1].Value = patientID;
+
+        }
+        private void dataGridView4_DefaultValuesNeeded(object sender,
+            System.Windows.Forms.DataGridViewRowEventArgs e)
+        {
+
+            e.Row.Cells[1].Value = patientID;
+
+        }
     }
 }
